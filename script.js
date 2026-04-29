@@ -24,4 +24,9 @@ function addTask() {
 
     // 4. Clear the input for the next task
     input.value = "";
+  
 }
+   
+document.getElementById("todoInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") addTask();
+    });
